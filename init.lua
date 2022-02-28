@@ -69,7 +69,100 @@ Config.TargetEntities = {
 }
 
 Config.TargetModels = {
-
+	["24/7 shops"] = {
+        models = {
+            "mp_m_shopkeep_01",
+        },
+        options = {
+            {
+                type = "client",
+                event = "qb-shops:marketshop",
+                icon = "fas fa-store",
+                label = "Buy Items",
+            },
+        },
+        distance = 2.5,
+    },
+    ["ammunation shops"] = {
+        models = {
+            "s_m_y_ammucity_01",
+        },
+        options = {
+            {
+                type = "client",
+                event = "qb-shops:marketshop",
+                icon = "fas fa-shopping-cart",
+                label = "Buy Weapons",
+            },
+        },
+        distance = 2.5,
+    },
+    ["youtool shops"] = {
+        models = {
+            "s_m_m_lathandy_01",
+        },
+        options = {
+            {
+                type = "client",
+                event = "qb-shops:marketshop",
+                icon = "fas fa-wrench",
+                label = "Buy Tools",
+            },
+        },
+        distance = 2.5,
+    },
+    ["sea world"] = {
+        models = {
+            "cs_dom",
+        },
+        options = {
+            {
+                type = "client",
+                event = "qb-shops:marketshop",
+                icon = "fas fa-circle",
+                label = "Buy Gear",
+            },
+        },
+        distance = 2.5,
+    },
+	["ATM"] = {
+		models = {"prop_atm_01", "prop_atm_02", "prop_atm_03", "prop_fleeca_atm"},
+		options = {
+			{
+				type = "command",
+				event = "atm",
+				parameters = {},
+				icon = "fab fa-cc-visa",
+				label = "USE ATM"
+			},
+		},
+		distance = 3.0
+	},
+	["trashsearch"] = {
+		models = {
+	-1096777189,
+	666561306,
+	1437508529,
+	-1426008804,
+	-228596739,
+	161465839,
+	651101403,
+		-58485588,
+		218085040,
+		-206690185,
+	
+		},
+		options = {
+			{
+				type = "client",
+				event = "qb-trashsearch:client:searchtrash",
+				icon = "fas fa-dumpster",
+				label = "Dumpster Dive",
+			},
+		},
+		distance = 3.0
+	},
+	}
 }
 
 Config.GlobalPedOptions = {
